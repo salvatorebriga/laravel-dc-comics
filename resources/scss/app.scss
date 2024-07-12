@@ -6,21 +6,21 @@ body {
 
     header {
         .container {
-            .container-fluid {
+            .navbar {
+                padding-top: 0;
+                padding-bottom: 0;
                 img {
-                    width: 100px;
+                    width: 50px;
+
+                    @media screen and (min-width: 580px) {
+                        width: 100px;
+                    }
                 }
 
-                ul {
-                    font-weight: bold;
-
-                    li {
-                        height: 100%;
-
-                        a {
-                            width: 100%;
-                        }
-                    }
+                .navbar-nav {
+                    display: flex;
+                    gap: 20px;
+                    list-style-type: none;
                 }
             }
         }
@@ -28,25 +28,50 @@ body {
 
     #jumbo {
         .container-full {
-            height: 50vh;
+            height: 10vh;
+            width: 100%;
             background-image: url("/resources/img/jumbo_img.jpeg");
             background-size: cover;
             background-repeat: no-repeat;
             background-position: 50% 25%;
+
+            @media screen and (min-width: 580px) {
+                height: 20vh;
+            }
+
+            @media screen and (min-width: 990px) {
+                height: 30vh;
+            }
+
+            @media screen and (min-width: 1200px) {
+                height: 50vh;
+            }
 
             .container {
                 height: 100%;
                 position: relative;
                 .current-series {
                     color: white;
-                    padding: 10px 25px;
-                    font-size: 25px;
+                    padding: 5px 15px;
+                    font-size: 15px;
                     background-color: #0282f9;
                     width: max-content;
                     font-weight: bolder;
                     position: absolute;
-                    bottom: -26px;
-                    left: 0;
+                    bottom: -16px;
+                    left: 25px;
+
+                    @media screen and (min-width: 580px) {
+                        padding: 5px 15px;
+                        font-size: 20px;
+                        bottom: -17px;
+                    }
+
+                    @media screen and (min-width: 1200px) {
+                        padding: 10px 20px;
+                        font-size: 25px;
+                        bottom: -27px;
+                    }
                 }
             }
         }
