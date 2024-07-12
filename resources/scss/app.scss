@@ -3,4 +3,58 @@
 
 body {
     background-color: white;
+
+    header {
+        .container {
+            .container-fluid {
+                img {
+                    width: 100px;
+                }
+
+                ul {
+                    font-weight: bold;
+
+                    li {
+                        height: 100%;
+
+                        a {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #jumbo {
+        .container-full {
+            height: 50vh;
+            background-image: url("/resources/img/jumbo_img.jpeg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 50% 25%;
+
+            .container {
+                height: 100%;
+                position: relative;
+                .current-series {
+                    color: white;
+                    padding: 10px 25px;
+                    font-size: 25px;
+                    background-color: #0282f9;
+                    width: max-content;
+                    font-weight: bolder;
+                    position: absolute;
+                    bottom: -26px;
+                    left: 0;
+                }
+            }
+        }
+    }
+
+    main {
+    }
+
+    footer {
+    }
 }

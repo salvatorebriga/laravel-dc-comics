@@ -13,6 +13,7 @@
     {{-- <img src="{{ Vite::asset('resources/img/duck.jpg') }}" alt="Paperella Laravel Template"> --}}
 
     @include('shared.header')
+    @include('shared.jumbo')
     @yield('main')
     @include('shared.footer')
 
