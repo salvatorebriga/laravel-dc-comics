@@ -1,3 +1,3 @@
 <footer>
-  SONO IL FOOTER
+  @include('shared.footer_top')
 </footer>

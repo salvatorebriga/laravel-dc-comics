@@ -81,9 +81,23 @@ body {
         padding-top: 50px;
         padding-bottom: 50px;
         background-color: #1c1c1c;
+
         .container {
             .row {
                 .col {
+                    @media screen and (max-width: 575px) {
+                        padding-left: 100px;
+                        padding-right: 100px;
+                    }
+
+                    @media screen and (max-width: 480px) {
+                        padding-left: 75px;
+                        padding-right: 75px;
+                    }
+                    @media screen and (max-width: 390px) {
+                        padding-left: 50px;
+                        padding-right: 50px;
+                    }
                     .card {
                         border: none;
                         color: white;
@@ -105,23 +119,54 @@ body {
                     }
                 }
             }
+        }
 
-            button {
-                padding: 10px 50px;
-                margin: 0 auto;
-                margin-top: 25px;
-                background-color: #0282f9;
-                color: white;
-                font-weight: bolder;
-                border: none;
+        button {
+            display: block;
+            margin: 25px auto 0 auto;
+            padding: 10px 50px;
+            background-color: #0282f9;
+            color: white;
+            font-weight: bolder;
+            border: none;
 
-                &:hover {
-                    background-color: #1990ff;
-                }
+            &:hover {
+                background-color: #1990ff;
             }
         }
     }
 
     footer {
+        #top {
+            background-color: #0282f9;
+            padding-top: 50px;
+            @media screen and (max-width: 992px) {
+                padding-top: 100px;
+            }
+            padding-bottom: 50px;
+            .container {
+                .row {
+                    .col {
+                        color: white;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 10px;
+
+                        @media screen and (max-width: 992px) {
+                            margin-bottom: 50px;
+                        }
+
+                        i {
+                            font-size: 40px;
+                        }
+                        span {
+                            font-size: 15px;
+                            font-weight: 200;
+                        }
+                    }
+                }
+            }
+        }
     }
 }

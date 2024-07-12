@@ -4,7 +4,7 @@
 
   <section id="comics">
     <div class="container">
-      <div class="row row-cols-1 row-cols-sm-3 row-cols-lg-6">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-6">
         @foreach ($comics as $comic)
           <div class="col">
             <div class="card">
@@ -16,11 +16,12 @@
           </div>
         @endforeach
 
-        <button>
-          LOAD MORE
-        </button>
-
       </div>
     </div>
+
+    <button>
+      LOAD MORE
+    </button>
+
   </section>
 @endsection
