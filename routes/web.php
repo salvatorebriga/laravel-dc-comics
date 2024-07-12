@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\ComicsController;
+use App\Models\Comic;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,11 +15,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-
-    $data = [
-        'title' => 'Home DC',
-    ];
-
-    return view('welcome', $data);
-})->name('Home DC');
+Route::get('/', [ComicsController::class, 'index'])->name('Home');
