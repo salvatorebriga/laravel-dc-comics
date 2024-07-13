@@ -251,9 +251,17 @@ body {
             .container {
                 .row {
                     .col-left {
-                        width: 50%;
+                        width: 100%;
                         display: flex;
                         align-items: center;
+                        justify-content: center;
+                        margin-bottom: 30px;
+
+                        @media screen and (min-width: 992px) {
+                            width: 50%;
+                            margin-bottom: 0px;
+                            justify-content: left;
+                        }
 
                         button {
                             background-color: transparent;
@@ -268,12 +276,19 @@ body {
                         }
                     }
                     .col-right {
-                        width: 50%;
+                        width: 100%;
                         display: flex;
                         align-items: center;
-                        justify-content: right;
-                        gap: 20px;
-                        font-size: 30px;
+                        justify-content: center;
+                        gap: 10px;
+                        font-size: 20px;
+
+                        @media screen and (min-width: 992px) {
+                            width: 50%;
+                            margin-bottom: 0px;
+                            font-size: 25px;
+                            justify-content: right;
+                        }
 
                         span {
                             color: #0282f9;
@@ -283,7 +298,11 @@ body {
 
                         i {
                             color: gray;
-                            font-size: 45px;
+                            font-size: 35px;
+
+                            @media screen and (min-width: 992px) {
+                                font-size: 45px;
+                            }
 
                             &:hover {
                                 color: white;
