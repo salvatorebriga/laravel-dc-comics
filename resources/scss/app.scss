@@ -192,18 +192,22 @@ body {
                 position: relative;
                 z-index: 2;
                 overflow: hidden;
+
                 .container {
                     display: flex;
                     padding-top: 50px;
                     padding-bottom: 50px;
-
                     position: relative;
+
                     ul {
+                        padding-left: 0;
+                        margin-right: 100px;
                         color: white;
                         list-style-type: none;
                         margin-bottom: 0;
                         line-height: 2;
                         z-index: 4;
+
                         li {
                             a {
                                 color: rgb(183, 180, 180);
@@ -233,6 +237,57 @@ body {
 
                         @media screen and (max-width: 680px) {
                             display: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        #bottom {
+            padding-top: 30px;
+            padding-bottom: 30px;
+            background-color: #303030;
+
+            .container {
+                .row {
+                    .col-left {
+                        width: 50%;
+                        display: flex;
+                        align-items: center;
+
+                        button {
+                            background-color: transparent;
+                            border: 3px solid #0282f9;
+                            color: white;
+                            padding: 10px 20px;
+                            font-size: 25px;
+
+                            &:hover {
+                                background-color: #0282f9;
+                            }
+                        }
+                    }
+                    .col-right {
+                        width: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: right;
+                        gap: 20px;
+                        font-size: 30px;
+
+                        span {
+                            color: #0282f9;
+                            margin-right: 10px;
+                            font-weight: 600;
+                        }
+
+                        i {
+                            color: gray;
+                            font-size: 45px;
+
+                            &:hover {
+                                color: white;
+                            }
                         }
                     }
                 }
