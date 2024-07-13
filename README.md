@@ -1,4 +1,4 @@
-For use this template follow this step:
+# For run the projectfollow this step:
 
     1. composer install;
     2. copy the .env.example file and rename it like ".env";
