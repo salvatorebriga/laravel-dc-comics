@@ -24,8 +24,16 @@
             <li class="nav-item">
               <a class="nav-link" href="#">CHARACTERS</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">COMICS</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="offcanvasComicsDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                COMICS
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="offcanvasComicsDropdown">
+                <li><a class="dropdown-item" href="/">Home</a></li>
+                <li><a class="dropdown-item" href="/comics/popular">Popular</a></li>
+                <li><a class="dropdown-item" href="/comics/genres">Genres</a></li>
+              </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">MOVIES</a>
@@ -61,8 +69,16 @@
         <li>
           <a class="nav-link py-3" href="#">CHARACTERS</a>
         </li>
-        <li>
-          <a class="nav-link py-3" href="/">COMICS</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link py-3 dropdown-toggle" href="#" id="comicsDropdown" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            COMICS
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="comicsDropdown" style="position: absolute">
+            <li><a class="dropdown-item" href="/">Home</a></li>
+            <li><a class="dropdown-item" href="/comics/popular">Popular</a></li>
+            <li><a class="dropdown-item" href="/comics/genres">Genres</a></li>
+          </ul>
         </li>
         <li>
           <a class="nav-link py-3" href="#">MOVIES</a>
