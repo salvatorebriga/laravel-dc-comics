@@ -19,6 +19,7 @@
           <li><strong>Artists:</strong> {{ implode(', ', json_decode($comic->artists)) }}</li>
           <li><strong>Writers:</strong> {{ implode(', ', json_decode($comic->writers)) }}</li>
         </ul>
+        <a href="{{ route('comics.edit', $comic->id) }}" class="btn btn-primary">Edit</a>
       </div>
     </div>
   </div>
