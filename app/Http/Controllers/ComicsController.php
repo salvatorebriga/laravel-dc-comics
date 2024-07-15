@@ -21,7 +21,7 @@ class ComicsController extends Controller
      */
     public function create()
     {
-        //
+        return view('comics.create');
     }
 
     /**
@@ -29,7 +29,31 @@ class ComicsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'title' => 'required|string|max:255',
+            'description' => 'required|string',
+            'thumb' => 'required|url',
+            'price' => 'required|string|max:15',
+            'series' => 'required|string|max:255',
+            'sale_date' => 'required|date',
+            'type' => 'required|string|max:255',
+            'artists' => 'required|string',
+            'writers' => 'required|string',
+        ]);
+
+        Comic::create([
+            'title' => $request->title,
+            'description' => $request->description,
+            'thumb' => $request->thumb,
+            'price' => $request->price,
+            'series' => $request->series,
+            'sale_date' => $request->sale_date,
+            'type' => $request->type,
+            'artists' => json_encode(explode(',', $request->artists)),
+            'writers' => json_encode(explode(',', $request->writers)),
+        ]);
+
+        return redirect()->route('Home')->with('success', 'Comic added successfully');
     }
 
     /**

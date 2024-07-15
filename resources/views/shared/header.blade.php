@@ -31,7 +31,7 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="offcanvasComicsDropdown">
                 <li><a class="dropdown-item" href="/">Home</a></li>
-                <li><a class="dropdown-item" href="/comics/popular">Popular</a></li>
+                <li><a class="dropdown-item" href="/comics/create">Create</a></li>
                 <li><a class="dropdown-item" href="/comics/genres">Genres</a></li>
               </ul>
             </li>
@@ -76,7 +76,7 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="comicsDropdown" style="position: absolute">
             <li><a class="dropdown-item" href="/">Home</a></li>
-            <li><a class="dropdown-item" href="/comics/popular">Popular</a></li>
+            <li><a class="dropdown-item" href="/comics/create">Create</a></li>
             <li><a class="dropdown-item" href="/comics/genres">Genres</a></li>
           </ul>
         </li>
