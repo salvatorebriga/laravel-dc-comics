@@ -62,7 +62,7 @@
           <a class="nav-link py-3" href="#">CHARACTERS</a>
         </li>
         <li>
-          <a class="nav-link py-3" href="#">COMICS</a>
+          <a class="nav-link py-3" href="/">COMICS</a>
         </li>
         <li>
           <a class="nav-link py-3" href="#">MOVIES</a>

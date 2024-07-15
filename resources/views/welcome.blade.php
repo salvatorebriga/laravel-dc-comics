@@ -9,8 +9,8 @@
           <div class="col">
             <div class="card">
               <img class="card-img-top" src="{{ $comic->thumb }}" alt="">
-              <div class="card-body ">
-                <p class="card-title mt-3">{{ $comic->title }}</p>
+              <div class="card-body mt-3">
+                <a href="{{ route('comics.show', ['id' => $comic->id]) }}">{{ $comic->title }}</a>
               </div>
             </div>
           </div>
