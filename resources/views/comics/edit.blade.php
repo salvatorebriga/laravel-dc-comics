@@ -3,6 +3,15 @@
 @section('main')
   <div class="container p-5">
     <h1>Edit Comic</h1>
+    @if ($errors->any())
+      <div class="alert alert-danger">
+        <ul>
+          @foreach ($errors->all() as $error)
+            <li>{{ $error }}</li>
+          @endforeach
+        </ul>
+      </div>
+    @endif
     <form action="{{ route('comics.update', $comic->id) }}" method="POST">
       @csrf
       @method('PUT')
@@ -15,6 +24,11 @@
       <div class="form-group">
         <label for="description">Description</label>
         <textarea name="description" class="form-control">{{ $comic->description }}</textarea>
+      </div>
+
+      <div class="mb-3">
+        <label for="thumb" class="form-label">Thumbnail URL</label>
+        <input type="url" class="form-control" id="thumb" name="thumb" value="{{ old('thumb') }}">
       </div>
 
       <div class="form-group">
